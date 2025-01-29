@@ -1,0 +1,561 @@
+# Reverse Generation Tool Version 3.0
+name = "Rasmus Bright"
+theme = "light"
+
+# Theme Colors
+[color]
+trans = "#00000000"
+gray = "#e4e4e3"
+black = "#000000"
+black2= "hsl(30, 100, 13)"
+black3= "hsl(240, 100, 10)"
+black4= "hsl(200, 100, 10)"
+blue= "hsl(216, 100, 33)"
+blue2= "hsl(224, 100, 50)"
+blue3= "hsl(240, 100, 23)"
+blue4= "hsl(204, 100, 83)"
+cyan= "hsl(147, 100, 76)"
+cyan2= "hsl(144, 71, 23)"
+cyanDark= "hsl(160, 40, 4)"
+green= "hsl(85, 85, 79)"
+green2= "hsl(120, 14, 23)"
+grey= "hsl(0, 0, 20)"
+grey2= "hsl(0, 0, 40)"
+grey3= "hsl(0, 0, 80)"
+orange= "hsl(24, 61, 74)"
+pink= "hsl(317, 100, 23)"
+purple= "hsl(255, 29, 47)"
+red= "hsl(0, 100, 30)"
+red2= "hsl(0, 100, 50)"
+red3= "hsl(12, 100, 50)"
+red4= "hsl(345, 100, 73)"
+white= "hsl(0, 0, 100)"
+white2= "hsl(60, 47, 96)"
+yellow= "hsl(60, 100, 50)"
+yellow2= "hsl(53, 89, 79)"
+yellow3= "hsl(52, 100, 63)"
+accent= "@blue2"
+selection = "@blue4::a=25"
+
+[code.error]
+bg = "@red2::l=70"
+border = "@red::l=40"
+fg = "@red::l=40"
+
+# [code.hint]
+# bg = "code.hint.bg|code.info.bg|ui.code_popup|ui.popup|ui.bg"
+# border = "code.hint.border|code.info.border|ui.border.secondary"
+# fg = "code.hint.fg|editor.hint|editor.text::(v-20,a=80)"
+
+# [code.info]
+# bg = "code.info.bg|ui.code_popup|ui.popup|scheme.blue"
+# border = "code.info.border|scheme.blue|ui.border.secondary"
+# fg = "code.info.fg|scheme.blue"
+
+# [code.success]
+# bg = "code.success.bg|ui.code_popup|ui.popup|scheme.green"
+# border = "code.success.border|scheme.green|ui.border.secondary"
+# fg = "code.success.fg|scheme.green"
+
+# [code.unreachable]
+# bg = "code.unreachable.bg|ui.code_popup|ui.popup|scheme.red_dim"
+# border = "code.unreachable.border|scheme.red_dim|ui.border.secondary"
+# fg = "code.unreachable.fg|scheme.red_dim"
+
+[code.warning]
+bg = "@yellow::l=70"
+border = "$editor.search.text::l=40"
+fg = "$editor.search.text::l=40"
+
+[editor]
+# auto_complete = "editor.auto_complete|editor.hint|editor.text::(v-20,a=80)"
+# bg = "editor.bg|ui.bg"
+# gutter = "@black::a=30"
+# invisible = "editor.invisible|editor.active.highlight|player.highlight"
+number = "@grey3"
+text = "@blackBase"
+# search = "@yellow"
+
+[editor.search]
+captures = "@selection::(a=60,l=60,s=80)"
+# line = "#f00"
+text = "@yellow3"
+
+[editor.active]
+line = "@yellow::a=31"
+matches = "@selection::(a=40,l=70)"
+number = "@black::a=80"
+
+[editor.matches]
+text = "@selection::(a=40,l=70)"
+brackets = "$player.cursor::(l+10, a=50)"
+
+[editor.guides]
+wrap = "@black::a=6"
+
+[editor.guides.indent]
+active = "@black::a=6"
+colors = []
+# inactive = "editor.guides.indent.inactive|editor.guides.indent.active|editor.guides.indent"
+
+
+# [file.conflict]
+# bg = "file.conflict.bg|ui.bg"
+# border = "file.conflict.border|scheme.red_br"
+# fg = "file.conflict.fg|scheme.red_br"
+
+[file.created]
+# bg = "file.created.bg|ui.bg"
+border = "@green2::l=50"
+fg = "@green2::l=50"
+
+[file.deleted]
+# bg = "file.deleted.bg|ui.bg"
+border = "@red"
+fg = "@red"
+
+# [file.hidden]
+# bg = "file.hidden.bg|ui.bg"
+# border = "file.hidden.border|ui.border.primary"
+# fg = "file.hidden.fg|ui.text.muted"
+
+# [file.ignored]
+# bg = "file.ignored.bg|ui.bg"
+# border = "file.ignored.border|ui.border.primary"
+# fg = "file.ignored.fg|ui.text.muted"
+
+[file.modified]
+# bg = "file.modified.bg|ui.bg"
+border = "@yellow::l=30"
+fg = "@yellow::l=30"
+
+# [file.renamed]
+# bg = "file.renamed.bg|ui.bg"
+# border = "file.renamed.border|scheme.purple"
+# fg = "file.renamed.fg|scheme.purple"
+
+
+[player]
+cursor = "@accent"
+highlight = "@selection::a=30"
+z = "@selection::a=20"
+
+[scheme]
+black = "@black"
+black_br = "@black2"
+black_dim = "@black3"
+blue = "@blue"
+blue_br = "@blue2"
+blue_dim = "@blue3"
+cyan = "@cyan"
+cyan_br = "@cyan2"
+cyan_dim = "@cyanDark"
+green = "@green"
+green_br = "@green2"
+green_dim = "@green2"
+pink = "@pink"
+# pink_br = "@pink"
+# pink_dim = "@pink"
+red = "@red"
+red_br = "@red2"
+red_dim = "@red3"
+white = "@black"
+white_br = "@black2"
+white_dim = "@black3"
+yellow = "@yellow"
+yellow_br = "@yellow2"
+yellow_dim = "@yellow3"
+
+[syntax.boolean]
+# bg = "syntax.boolean.bg"
+fg = "$syntax.constant.fg"
+# style = "syntax.boolean.style"
+# weight = "syntax.boolean.weight"
+
+[syntax.comment]
+# bg = "syntax.comment.bg"
+fg = "@black::l=47"
+# style = "syntax.comment.style"
+# weight = "syntax.comment.weight"
+
+[syntax.comment.doc]
+# bg = "syntax.comment.doc.bg|syntax.doc.bg|syntax.comment.bg"
+fg = "@grey"
+# style = "syntax.comment.doc.style|syntax.doc.style|syntax.comment.style"
+# weight = "syntax.comment.doc.weight|syntax.doc.weight|syntax.comment.weight"
+
+[syntax.constant]
+# bg = "syntax.constant.bg"
+fg = "@pink"
+# style = "syntax.constant.style"
+# weight = "syntax.constant.weight"
+
+# [syntax.constant.builtin]
+# bg = "syntax.constant.builtin.bg|syntax.builtin.bg|syntax.constant.bg"
+# fg = "syntax.constant.builtin.color|syntax.builtin.color|syntax.constant.fg"
+# style = "syntax.constant.builtin.style|syntax.builtin.style|syntax.constant.style"
+# weight = "syntax.constant.builtin.weight|syntax.builtin.weight|syntax.constant.weight"
+
+# [syntax.enum]
+# bg = "syntax.enum.bg"
+# fg = "syntax.enum.color"
+# style = "syntax.enum.style"
+# weight = "syntax.enum.weight"
+
+[syntax.func]
+bg = "syntax.func.bg"
+fg = "@black"
+# style = "syntax.func.style"
+# weight = 700
+
+[syntax.func.builtin]
+# bg = "syntax.func.builtin.bg|syntax.builtin.bg|syntax.function.bg"
+fg = "@type::l=80"
+# style = "syntax.func.builtin.style|syntax.builtin.style|syntax.function.style"
+# weight = 700
+
+[syntax.func.decl]
+# bg = "syntax.func.decl.bg|syntax.function.bg"
+fg = "@black"
+# style = "syntax.func.style"
+weight = 700
+
+# [syntax.func.def]
+# bg = "syntax.func.def.bg|syntax.function.bg"
+# fg = "syntax.func.def.color|syntax.function.fg"
+# style = "syntax.func.def.style|syntax.function.style"
+# weight = "syntax.func.def.weight|syntax.function.weight"
+
+# [syntax.func.method]
+# bg = "syntax.func.method.bg|syntax.func.bg"
+# fg = "syntax.func.method.color|syntax.func.fg"
+# style = "syntax.func.method.style|syntax.func.style"
+# weight = "syntax.func.method.weight|syntax.func.weight"
+
+[syntax.func.macro]
+fg = "$syntax.func.builtin.fg"
+
+[syntax.keyword]
+# bg = "syntax.keyword.bg"
+fg = "#5353a6"
+# style = "syntax.keyword.style"
+# weight = "syntax.keyword.weight"
+
+[syntax.keyword.conditional]
+# bg = "syntax.keyword.conditional.bg|syntax.keyword.bg"
+fg = "#5353a6"
+# style = "syntax.keyword.conditional.style|syntax.keyword.style"
+# weight = "syntax.keyword.conditional.weight|syntax.keyword.weight"
+
+# [syntax.keyword.conditional.ternary]
+# bg = "syntax.keyword.conditional.ternary.bg|syntax.keyword.conditional.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.conditional.ternary.fg|syntax.keyword.conditional.fg|syntax.keyword.fg"
+# style = "syntax.keyword.conditional.ternary.style|syntax.keyword.conditional.style|syntax.keyword.style"
+# weight = "syntax.keyword.conditional.ternary.weight|syntax.keyword.conditional.weight|syntax.keyword.weight"
+
+# [syntax.keyword.coroutine]
+# bg = "syntax.keyword.coroutine.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.coroutine.fg|syntax.keyword.fg"
+# style = "syntax.keyword.coroutine.style|syntax.keyword.style"
+# weight = "syntax.keyword.coroutine.weight|syntax.keyword.weight"
+
+# [syntax.keyword.debug]
+# bg = "syntax.keyword.debug.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.debug.fg|syntax.keyword.fg"
+# style = "syntax.keyword.debug.style|syntax.keyword.style"
+# weight = "syntax.keyword.debug.weight|syntax.keyword.weight"
+
+# [syntax.keyword.directive]
+# bg = "syntax.keyword.directive.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.directive.fg|syntax.keyword.fg"
+# style = "syntax.keyword.directive.style|syntax.keyword.style"
+# weight = "syntax.keyword.directive.weight|syntax.keyword.weight"
+
+# [syntax.keyword.directive.define]
+# bg = "syntax.keyword.directive.define.bg|syntax.keyword.directive.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.directive.define.fg|syntax.keyword.directive.fg|syntax.keyword.fg"
+# style = "syntax.keyword.directive.define.style|syntax.keyword.directive.style|syntax.keyword.style"
+# weight = "syntax.keyword.directive.define.weight|syntax.keyword.directive.weight|syntax.keyword.weight"
+
+# [syntax.keyword.exception]
+# bg = "syntax.keyword.exception.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.exception.fg|syntax.keyword.fg"
+# style = "syntax.keyword.exception.style|syntax.keyword.style"
+# weight = "syntax.keyword.exception.weight|syntax.keyword.weight"
+
+# [syntax.keyword.function]
+# bg = "syntax.keyword.function.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.function.fg|syntax.keyword.fg"
+# style = "syntax.keyword.function.style|syntax.keyword.style"
+# weight = "syntax.keyword.function.weight|syntax.keyword.weight"
+
+# [syntax.keyword.import]
+# bg = "syntax.keyword.import.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.import.fg|syntax.keyword.fg"
+# style = "syntax.keyword.import.style|syntax.keyword.style"
+# weight = "syntax.keyword.import.weight|syntax.keyword.weight"
+
+[syntax.keyword.operator]
+# bg = "syntax.keyword.operator.bg|syntax.keyword.bg"
+fg = "@orange::l=80"
+# style = "syntax.keyword.operator.style|syntax.keyword.style"
+# weight = "syntax.keyword.operator.weight|syntax.keyword.weight"
+
+# [syntax.keyword.repeat]
+# bg = "syntax.keyword.repeat.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.repeat.fg|syntax.keyword.fg"
+# style = "syntax.keyword.repeat.style|syntax.keyword.style"
+# weight = "syntax.keyword.repeat.weight|syntax.keyword.weight"
+
+# [syntax.keyword.return]
+# bg = "syntax.keyword.return.bg|syntax.keyword.bg"
+# fg = "syntax.keyword.return.fg|syntax.keyword.fg"
+# style = "syntax.keyword.return.style|syntax.keyword.style"
+# weight = "syntax.keyword.return.weight|syntax.keyword.weight"
+
+# [syntax.keyword.type]
+# bg = "syntax.keyword.type.bg|syntax.keyword.bg"
+# fg = "#f00"
+# style = "syntax.keyword.type.style|syntax.keyword.style"
+# weight = "syntax.keyword.type.weight|syntax.keyword.weight"
+
+# [syntax.namespace]
+# bg = "syntax.namespace.bg|syntax.var.builtin.bg|syntax.builtin.bg|syntax.var.bg"
+# fg = "syntax.namespace.color|syntax.var.builtin.color|syntax.builtin.color|syntax.var.fg"
+# style = "syntax.namespace.style|syntax.var.builtin.style|syntax.builtin.style|syntax.var.style"
+# weight = "syntax.namespace.weight|syntax.var.builtin.weight|syntax.builtin.weight|syntax.var.weight"
+
+[syntax.number]
+# bg = "syntax.number.bg"
+fg = "$syntax.constant.fg"
+# style = "syntax.number.style"
+# weight = "syntax.number.weight"
+
+[syntax.op]
+primary = "@grey2"
+# bg = "syntax.op.bg"
+# fg = "$syntax.punc.fg"
+fg = "#8c8ca4"
+# style = "syntax.op.style"
+# weight = "syntax.op.weight"
+
+[syntax.op.bitwise]
+# bg = "syntax.op.bitwise.bg|syntax.op.bg"
+fg = "$syntax.op.primary"
+# style = "syntax.op.bitwise.style|syntax.op.style"
+# weight = "syntax.op.bitwise.weight|syntax.op.weight"
+
+[syntax.op.compare]
+# bg = "syntax.op.compare.bg|syntax.op.bg"
+fg = "$syntax.op.primary"
+# style = "syntax.op.compare.style|syntax.op.style"
+# weight = "syntax.op.compare.weight|syntax.op.weight"
+
+[syntax.op.logical]
+# bg = "syntax.op.logical.bg|syntax.op.bg"
+fg = "$syntax.op.primary"
+# style = "syntax.op.logical.style|syntax.op.style"
+# weight = "syntax.op.logical.weight|syntax.op.weight"
+
+[syntax.op.math]
+# bg = "syntax.op.math.bg|syntax.op.bg"
+fg = "$syntax.op.primary"
+# style = "syntax.op.math.style|syntax.op.style"
+# weight = "syntax.op.math.weight|syntax.op.weight"
+
+[syntax.op.setter]
+# bg = "syntax.op.setter.bg|syntax.op.bg"
+fg = "$syntax.op.primary"
+# style = "syntax.op.setter.style|syntax.op.style"
+# weight = "syntax.op.setter.weight|syntax.op.weight"
+
+# [syntax.param]
+# bg = "syntax.param.bg|syntax.var.bg"
+# fg = "syntax.param.color|syntax.var.fg"
+# style = "syntax.param.style|syntax.var.style"
+# weight = "syntax.param.weight|syntax.var.weight"
+
+# [syntax.property]
+# bg = "syntax.property.bg|syntax.var.bg"
+# fg = "syntax.property.fg"
+# style = "syntax.property.style"
+# weight = "syntax.property.weight|syntax.var.weight"
+
+[syntax.punc]
+# bg = "syntax.punc.bg"
+fg = "@unimportant"
+# style = "syntax.punc.style"
+# weight = "syntax.punc.weight"
+
+[syntax.punc.bracket]
+# bg = "syntax.punc.bracket.bg|syntax.punc.bg"
+fg = "#8c8ca4"
+# style = "syntax.punc.bracket.style|syntax.punc.style"
+# weight = "syntax.punc.bracket.weight|syntax.punc.weight"
+
+# [syntax.punc.delimiter]
+# bg = "syntax.punc.delimiter.bg|syntax.punc.bg"
+# fg = "syntax.punc.delimiter.color|syntax.punc.fg"
+# style = "syntax.punc.delimiter.style|syntax.punc.style"
+# weight = "syntax.punc.delimiter.weight|syntax.punc.weight"
+
+# [syntax.punc.symbol]
+# bg = "syntax.punc.symbol.bg|syntax.punc.bg"
+# fg = "syntax.punc.symbol.color|syntax.punc.fg"
+# style = "syntax.punc.symbol.style|syntax.punc.style"
+# weight = "syntax.punc.symbol.weight|syntax.punc.weight"
+
+[syntax.punc.tag]
+# bg = "syntax.punc.tag.bg|syntax.punc.bracket.bg|syntax.punc.bg"
+fg = "@unimportant"
+# style = "syntax.punc.tag.style|syntax.punc.bracket.style|syntax.punc.style"
+# weight = "syntax.punc.tag.weight|syntax.punc.bracket.weight|syntax.punc.weight"
+
+[syntax.string]
+# bg = "syntax.string.bg"
+fg = "@cyan2"
+# style = "syntax.string.style"
+# weight = "syntax.string.weight"
+
+[syntax.string.escape]
+# bg = "syntax.string.escape.bg|syntax.string.bg"
+fg = "@cyanDark"
+# style = "syntax.string.escape.style|syntax.string.style"
+# weight = "syntax.string.escape.weight|syntax.string.weight"
+
+[syntax.string.inter]
+# bg = "syntax.string.inter.bg|syntax.punc.bg"
+fg = "@cyanDark"
+# style = "syntax.string.inter.style|syntax.punc.style"
+# weight = "syntax.string.inter.weight|syntax.punc.weight"
+
+[syntax.string.regex]
+# bg = "syntax.string.regex.bg|syntax.string.bg"
+fg = "@red4"
+# style = "syntax.string.regex.style|syntax.string.style"
+# weight = "syntax.string.regex.weight|syntax.string.weight"
+
+# [syntax.string.special]
+# bg = "syntax.string.special.bg|syntax.string.bg"
+# fg = "syntax.string.special.color|syntax.string.fg"
+# style = "syntax.string.special.style|syntax.string.style"
+# weight = "syntax.string.special.weight|syntax.string.weight"
+
+[syntax.type]
+# bg = "syntax.type.bg"
+fg = "@blue"
+# style = "syntax.type.style"
+# weight = 700
+
+[syntax.type.builtin]
+# bg = "syntax.type.builtin.bg|syntax.builtin.bg|syntax.type.bg"
+fg = "#395a66"
+# style = "syntax.type.builtin.style|syntax.builtin.style|syntax.type.style"
+weight = "syntax.type.builtin.weight|syntax.builtin.weight|syntax.type.weight"
+
+[syntax.type.primitive]
+# bg = "syntax.type.primitive.bg|syntax.type.builtin.bg|syntax.builtin.bg|syntax.type.bg"
+fg = "#395a66"
+# style = "syntax.type.primitive.style|syntax.type.builtin.style|syntax.builtin.style|syntax.type.style"
+weight = "syntax.type.primitive.weight|syntax.type.builtin.weight|syntax.builtin.weight|syntax.type.weight"
+
+# [syntax.var]
+# bg = "syntax.var.bg"
+# fg = "syntax.var.fg"
+# style = "syntax.var.style"
+# weight = "syntax.var.weight"
+
+# [syntax.var.builtin]
+# bg = "syntax.var.builtin.bg|syntax.builtin.bg|syntax.var.bg"
+# fg = "syntax.var.builtin.color|syntax.type.fg"
+# style = "syntax.var.builtin.style|syntax.builtin.style|syntax.var.style"
+# weight = "syntax.var.builtin.weight|syntax.builtin.weight|syntax.var.weight"
+
+[syntax.z.html_attribute]
+# bg = "syntax.z.html_attribute.bg"
+fg = "@grey"
+# style = "syntax.z.html_attribute.style"
+# weight = "syntax.z.html_attribute.weight"
+
+[syntax.z.html_tag]
+# bg = "syntax.z.html_tag.bg"
+fg = "@purple"
+# style = "syntax.z.html_tag.style"
+# weight = "syntax.z.html_tag.weight"
+
+[syntax.z.json_key]
+# bg = "syntax.z.json_key.bg|syntax.property.bg"
+fg = "@grey2"
+# style = "syntax.z.json_key.style|syntax.property.style"
+# weight = "syntax.z.json_key.weight|syntax.property.weight"
+
+# [syntax.z.rs_lifetime]
+# bg = "syntax.z.rs_lifetime.bg"
+# fg = "syntax.z.rs_lifetime.color"
+# style = "syntax.z.rs_lifetime.style"
+# weight = "syntax.z.rs_lifetime.weight"
+
+[ui]
+bg = "@white"
+# file_drop = "ui.file_drop|ui.bg::(value+10, alpha=80)"
+link = "@blue"
+panel = "@gray"
+popup = "@gray"
+# terminal = "ui.terminal|terminal.bg|ui.bg"
+
+[ui.bars]
+bottom = "ui.bars.bottom|ui.bg"
+tool = "$ui.bg"
+top = "@gray"
+
+[ui.bars.tab]
+active = "$ui.bars.tool"
+bg = "@gray"
+inactive = "@gray"
+
+# [ui.bars.title]
+# inactive = "ui.bars.title.inactive|ui.bars.top|ui.bg"
+
+[ui.border]
+primary = "@gray"
+secondary = "$ui.bars.tool::l-3"
+
+# [ui.button]
+# active = "ui.button.active|ui.button.primary::v+5"
+# disabled = "ui.button.disabled|ui.button.primary|ui.bg"
+# pressed = "ui.button.pressed|ui.button.primary::v+5"
+# primary = "ui.button.primary|ui.bg"
+
+# [ui.element]
+# active = "ui.element.active|ui.bg::v+5"
+# bg = "ui.element.bg"
+# disabled = "ui.element.disabled"
+# hover = "ui.element.hover|ui.bg::v-5"
+# pressed = "ui.element.pressed|ui.bg::v+5"
+
+# [ui.header]
+# hover = "ui.header.hover|ui.header.primary::v+5|ui.header::v+5|ui.button.primary::v-5"
+# primary = "ui.header.primary|ui.header|ui.panel|ui.bg"
+
+[ui.scrollbar]
+border = "@trans"
+highlight = "@trans"
+thumb = "@gray::a=90"
+track = "@trans"
+
+[ui.text]
+accent = "@accent"
+active = "@black"
+inactive = "@black::l=30"
+muted = "@black::l=30"
+placeholder = "@black::l=30"
+
+# Overrides
+[overrides]
+# "style/syntax/function.special/color" = "#F00"
+
+# Deletions
+[deletions]
+keys = [
+"style/accents", "style/background.appearance"
+]
